@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">assignment2</string>
+    <string name="menu_settings">Settings</string>
+    <string name="studentno">S1628221</string>
+    <string name="main">Traffic Scotland RSS Feed</string>
+    <string name="map">Browse Map</string>
+</resources>

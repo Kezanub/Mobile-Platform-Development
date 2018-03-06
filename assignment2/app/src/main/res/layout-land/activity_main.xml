@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Owen Cannon S1628221-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/studentno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="S1628221"
+            />
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/incidentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO DISPLAY CURRENT INCIDENTS"
+            />
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/roadButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO DISPLAY ROADWORKS"
+            />
+        <Button style="@style/Widget.AppCompat.Button.Colored"
+            android:id="@+id/plannedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PRESS TO DISPLAY PLANNED ROADWORKS"
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Search List" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR!" />
+            <Button
+                android:id="@+id/mapbutton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIEW MAP!"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exit!"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/urlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Welcome to Traffic Scotland RSS feeds"
+            />
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+    </LinearLayout>
+</ScrollView>
